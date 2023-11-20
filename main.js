@@ -5,10 +5,14 @@ function getComputerChoice() {
     return computerChoices[randomChoice];
 }
 let computerSelection = getComputerChoice();
-console.log(computerSelection)
+//console.log(computerSelection)
+
+let playerScore = 0;
+let computerScore = 0;
+
 // The play function
 
-function play(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
 
@@ -20,10 +24,15 @@ function play(playerSelection, computerSelection) {
         (playerSelection === "scissors" && computerSelection === "paper")
     ) {
         return `You win! ${playerSelection} beats ${computerSelection}`;
+        playerScore++;
     } else {
         return `You lose! ${computerSelection} beats ${playerSelection}`;
+        computerScore++;
     }
 }
 
-let round1 = play("rock", computerSelection)
-console.log(round1);
+//Get player selection
+function getPlayerChoice() {
+    let playerSelection = prompt("Do you choose rock, paper or scissors?");
+    return playerSelection.toLowerCase();
+}
