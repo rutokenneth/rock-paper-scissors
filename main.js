@@ -1,43 +1,5 @@
-// let playerScore = 0;
-// let computerScore = 0;
-// const computerSelection = getComputerChoice();
-// getComputerChoice();
-// let playerSelection = getPlayerChoice();
-
-
-// //Get player selection
-// function getPlayerChoice() {
-//     let playerSelection = prompt("Do you choose rock, paper or scissors?");
-//     return playerSelection.toLowerCase();
-// }
-
-// // The play function
-
-// function playRound(playerSelection, computerSelection) {
-    
-//     let playerSelection1 = playerSelection.toLowerCase();
-//     let computerSelection1 = computerSelection.toLowerCase();
-
-//     let result;
-//     if (playerSelection1 === computerSelection1) {
-//         result = "It is a tie!";
-//     } else if (
-//         (playerSelection1 === "rock" && computerSelection1 === "scissors") ||
-//         (playerSelection1 === "paper" && computerSelection1 === "rock") ||
-//         (playerSelection1 === "scissors" && computerSelection1 === "paper")
-//     ) {
-//         result = `You win! ${playerSelection1} beats ${computerSelection1}`;
-//         playerScore++;
-//     } else {
-//         result = `You lose! ${computerSelection1} beats ${playerSelection1}`;
-//         computerScore++;
-//     }
-//     console.log(`You won ${playerScore} times, the computer won ${computerScore} times`)
-//     return {
-//         Machine: computerScore,
-//         You: playerScore,
-//     }
-// }
+let playerScore = 0;
+let computerScore = 0;
 
 // First function to get the Computer's choice
 function getComputerChoice() {
@@ -63,27 +25,34 @@ function playGame(playerSelection) {
     if (playerSelection === 'Scissors') {
         if (computerSelection === 'Rock') {
             result = 'You lose!';
+            computerScore++;
         }else if (computerSelection === 'Paper') {
             result = 'You win!'
+            playerScore++;
         }else if (computerSelection === 'Scissors') {
             result = 'It\'s a tie!';
         }
     } else if(playerSelection === 'Paper') {
         if (computerSelection === 'Rock') {
             result = 'You WIn!';
+            playerScore++;
         }else if (computerSelection === 'Paper') {
-            result = 'It\s a Tie!!'
+            result = 'It\s a Tie!!';
         }else if (computerSelection === 'Scissors') {
             result = 'You lose!';
+            computerScore++;
         }
     } else if(playerSelection === 'Rock') {
         if (computerSelection === 'Rock') {
             result = 'It\s a Tie!';
         }else if (computerSelection === 'Paper') {
-            result = 'You Lose!!'
+            result = 'You Lose!!';
+            computerScore++;
         }else if (computerSelection === 'Scissors') {
             result = 'You Win!';
+            playerScore++;
         }
     }    
     alert(`You move was ${playerSelection}. The computer picked ${computerSelection}. ${result}`)
+    alert(`Your score is ${playerScore}. The Machine's Score is ${computerScore}`)
 }
