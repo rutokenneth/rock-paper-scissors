@@ -53,4 +53,37 @@ function getComputerChoice() {
     } 
     return(computerMove)
 }
-console.log(getComputerChoice());
+
+// Function to play a single round of the game
+function playGame(playerSelection) {
+    const computerSelection = getComputerChoice();
+    getComputerChoice();
+
+    let result = '';
+    if (playerSelection === 'Scissors') {
+        if (computerSelection === 'Rock') {
+            result = 'You lose!';
+        }else if (computerSelection === 'Paper') {
+            result = 'You win!'
+        }else if (computerSelection === 'Scissors') {
+            result = 'It\'s a tie!';
+        }
+    } else if(playerSelection === 'Paper') {
+        if (computerSelection === 'Rock') {
+            result = 'You WIn!';
+        }else if (computerSelection === 'Paper') {
+            result = 'It\s a Tie!!'
+        }else if (computerSelection === 'Scissors') {
+            result = 'You lose!';
+        }
+    } else if(playerSelection === 'Rock') {
+        if (computerSelection === 'Rock') {
+            result = 'It\s a Tie!';
+        }else if (computerSelection === 'Paper') {
+            result = 'You Lose!!'
+        }else if (computerSelection === 'Scissors') {
+            result = 'You Win!';
+        }
+    }    
+    alert(`You move was ${playerSelection}. The computer picked ${computerSelection}. ${result}`)
+}
