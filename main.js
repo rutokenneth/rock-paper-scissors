@@ -56,3 +56,20 @@ function playGame(playerSelection) {
     alert(`You move was ${playerSelection}. The computer picked ${computerSelection}. ${result}`)
     alert(`Your score is ${playerScore}. The Machine's Score is ${computerScore}`)
 }
+
+// Making the buttons interactive
+
+const rockBtn = document.querySelector('#rock');
+rockBtn.addEventListener('click', () => {
+    playGame("Rock");
+});
+
+const paperBtn = document.querySelector('#paper');
+paperBtn.addEventListener('click', () => {
+    playGame("Paper");
+});
+
+const scissorsBtn = document.querySelector('#scissors');
+scissorsBtn.addEventListener('click', () => {
+    playGame("Score");
+});

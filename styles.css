@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #EEEDE7;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    background-color: #FBE7C6;
+}
+
+header > h1 {
+    font-size: 5em;
+    font-style: italic;
+    color: #7F8FA3;
+}
