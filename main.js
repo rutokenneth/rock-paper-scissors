@@ -71,5 +71,5 @@ paperBtn.addEventListener('click', () => {
 
 const scissorsBtn = document.querySelector('#scissors');
 scissorsBtn.addEventListener('click', () => {
-    playGame("Score");
+    playGame("Scissors");
 });
