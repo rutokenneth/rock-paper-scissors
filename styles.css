@@ -3,6 +3,8 @@
     margin: 0;
     background-color: #EEEDE7;
     /* height: 100vh; */
+    background-color:#ccd7df;
+    font-family: 'Roboto';
 }
 .container {
     display: flex;
@@ -15,25 +17,40 @@
     justify-content: center;
     width: 100%;
     min-height: 60px;
-    background-color: #ae75d4;
+    background-color: #e7c5c5;
     color: black;
 }
 .scores {
-    background-color: #9F7DB5;
+    /* display: flex; */
 }
 header > h1 {
     font-size: 5em;
-    color: #7F8FA3;
+    color: #97B8D5;
 }
 
 footer {
     position: fixed;
     bottom: 0;
-  }
-
+    left: 0;
+    width: 100%;
+    background-color: #8e5858;
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', arial;
+    height: 50px;
+}
+.score-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 button {
     height: 60px;
     width: 100px;
+}
+.score-container {
+  display: flex;
+  justify-content: center;
 }
 /* Styles for the buttons */
 /* Load custom font from Google Fonts */
