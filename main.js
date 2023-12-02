@@ -65,7 +65,21 @@ function playGame(playerSelection) {
     userScore.textContent = `🧒Your score is ${playerScore}`;
     compScore.textContent = `🖥️The machine's score is ${computerScore}`;
     draws.textContent = `🤝${drawedGames} Draws`;
+    
+    // displaying round winner
+    const winner = document.querySelector('.champ');
+    if (playerScore === 5) {
+        winner.textContent = '🎉Congratulations! You Won🎉';
+    } else if (computerScore === 5) {
+        winner.textContent = '🥹You Lost! Better Luck next Time🥹';
+    }
 
+    // resseting score values
+    function resetValues(computerScore, playerScore, drawedGames) {
+        computerScore = 0;
+        playerScore = 0;
+        drawedGames = 0;
+      }
 }
 
 
