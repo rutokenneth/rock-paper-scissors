@@ -12,16 +12,29 @@
 <body>
     <main class="container">
         <header class="header">
-            <h1 class="header">Rock &nbsp;Paper &nbsp;Scissors</h1>
+            <h1 class="header retro-text">Rock &nbsp;Paper &nbsp;Scissors</h1>
     
         </header>
-        
-        <div class="controls">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">scissors</button>
+        <div class="scores">
+            <h2>Make Your Move</h2>
+            <h3>First Player to Score 5 Wins!</h3>
+            <div class="scorebox">
+                <div class="score-container">
+                    <div class="playerscore"></div>
+                    <p class="player-score"></p>
+                    <div class="computerscore"></div>
+                    <p class="comp-score"></p>
+                </div>
+            </div>
         </div>
-        
+        <div class="controls">
+            <button id="rock" class="neon-button">✊</button>
+            <button id="paper" class="neon-button">📃</button>
+            <button id="scissors" class="neon-button">✂️</button>
+        </div>
+        <footer class="footer">
+            © 2023 Rock Paper Scissors Game in The Odin Project's Curriculum by <a href="https://github.com/rutokenneth" target="_blank">Kenneth Ruto</a>. All Rights Reserved
+        </footer>
     </main>
     <script src="main.js"></script>
 </body>

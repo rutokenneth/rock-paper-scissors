@@ -2,16 +2,68 @@
     padding: 0;
     margin: 0;
     background-color: #EEEDE7;
+    /* height: 100vh; */
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 .header {
     display: flex;
     justify-content: center;
+    width: 100%;
     min-height: 60px;
-    background-color: #FBE7C6;
+    background-color: #ae75d4;
+    color: black;
 }
-
+.scores {
+    background-color: #9F7DB5;
+}
 header > h1 {
     font-size: 5em;
     color: #7F8FA3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+button {
+    height: 60px;
+    width: 100px;
+}
+/* Styles for the buttons */
+/* Load custom font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body {
+  background-color: #1a1a1a; /* Dark background for neon contrast */
+}
+
+/* Styling for our neon button */
+.neon-button {
+  color: #ff4b59; /* Text color */
+  background-color: #1a1a1a; /* Same as the background for a seamless look */
+  border: 4px solid #ff4b59; /* Solid border with neon color */
+  border-radius: 10px; /* Slight rounding of corners */
+  padding: 15px 30px; /* Padding around the text */
+  font-size: 25px; /* Visible and impactful text size */
+  font-family: "Montserrat", sans-serif; /* Stylish font */
+  letter-spacing: 3px; /* Space between letters for better readability */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  font-weight: bold; /* Bold text */
+  filter: drop-shadow(0 0 10px #ff4b59) drop-shadow(0 0 30px #ff4b59)
+    contrast(1.8) brightness(1.8); /* Adds a subtle glow effect and enhances the vibrancy */
+  transition: 0.5s; /* Smooth color change on hover */
+}
+
+/* Styling for hover state */
+.neon-button:hover {
+  color: #a18989; /* Text color changes on hover */
+  background-color: #695355; /* Button color fills on hover */
+  filter: drop-shadow(0 0 10px #ff4b59) drop-shadow(0 0 40px #ff4b59)
+    contrast(1.8) brightness(1.8); /* Glow effect is enhanced on hover */
 }
