@@ -69,10 +69,10 @@ function playGame(playerSelection) {
     // displaying round winner
     const winner = document.querySelector('.champ');
     if (playerScore === 5) {
-        winner.textContent = '🎉Congratulations! You Won🎉';
+        winner.textContent = '🎉Congratulations! You Won🎉. Start a New Game';
         resetValues(computerScore, playerScore, drawedGames);
     } else if (computerScore === 5) {
-        winner.textContent = '🥹You Lost! Better Luck next Time🥹';
+        winner.textContent = '🥹You Lost! Better Luck next Time🥹 Start a New Game';
         resetValues(computerScore, playerScore, drawedGames);
     }
 
