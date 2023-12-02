@@ -64,6 +64,11 @@ button {
     height: 60px;
     width: 100px;
 }
+
+.new-game {
+  color: green;
+  font-weight: 500;
+}
 .score-container {
   display: flex;
   justify-content: center;
