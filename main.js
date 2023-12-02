@@ -70,8 +70,10 @@ function playGame(playerSelection) {
     const winner = document.querySelector('.champ');
     if (playerScore === 5) {
         winner.textContent = '🎉Congratulations! You Won🎉';
+        resetValues(computerScore, playerScore, drawedGames);
     } else if (computerScore === 5) {
         winner.textContent = '🥹You Lost! Better Luck next Time🥹';
+        resetValues(computerScore, playerScore, drawedGames);
     }
 
     // resseting score values
@@ -79,7 +81,9 @@ function playGame(playerSelection) {
         computerScore = 0;
         playerScore = 0;
         drawedGames = 0;
-      }
+        
+    }
+
 }
 
 
