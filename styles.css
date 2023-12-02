@@ -3,6 +3,7 @@
     margin: 0;
     background-color: #EEEDE7;
     /* height: 100vh; */
+    background-color:#5b6267;
 }
 .container {
     display: flex;
@@ -15,7 +16,7 @@
     justify-content: center;
     width: 100%;
     min-height: 60px;
-    background-color: #ae75d4;
+    background-color: #5a5a5a;
     color: black;
 }
 .scores {
@@ -23,7 +24,7 @@
 }
 header > h1 {
     font-size: 5em;
-    color: #7F8FA3;
+    color: #97B8D5;
 }
 
 footer {
