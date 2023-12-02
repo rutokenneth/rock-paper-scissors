@@ -3,7 +3,8 @@
     margin: 0;
     background-color: #EEEDE7;
     /* height: 100vh; */
-    background-color:#5b6267;
+    background-color:#ccd7df;
+    font-family: 'Roboto';
 }
 .container {
     display: flex;
@@ -16,11 +17,11 @@
     justify-content: center;
     width: 100%;
     min-height: 60px;
-    background-color: #5a5a5a;
+    background-color: #e7c5c5;
     color: black;
 }
 .scores {
-    background-color: #9F7DB5;
+    /* display: flex; */
 }
 header > h1 {
     font-size: 5em;
@@ -30,8 +31,19 @@ header > h1 {
 footer {
     position: fixed;
     bottom: 0;
-  }
-
+    left: 0;
+    width: 100%;
+    background-color: #8e5858;
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', arial;
+    height: 50px;
+}
+.score-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 button {
     height: 60px;
     width: 100px;

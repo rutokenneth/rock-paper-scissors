@@ -56,18 +56,18 @@ function playGame(playerSelection) {
             playerScore++;
         }
     }    
-    // alert(`You move was ${playerSelection}. The computer picked ${computerSelection}. ${result}`)
-    // alert(`Your score is ${playerScore}. The Machine's Score is ${computerScore}`)
+    // showing results 
+
+    const userScore = document.querySelector('.player-score');
+    const compScore = document.querySelector('.comp-score');
+    const draws = document.querySelector('.draws');
+
+    userScore.textContent = `🧒Your score is ${playerScore}`;
+    compScore.textContent = `🖥️The machine's score is ${computerScore}`;
+    draws.textContent = `🤝${drawedGames} Draws`;
+
 }
-// showing results 
 
-const userScore = document.querySelector('.player-score');
-const compScore = document.querySelector('.comp-score');
-const draws = document.querySelector('.draws');
-
-// userScore.textContent = `Your score is ${playerScore}`;
-// compScore.textContent = `The machine's score is ${computerScore}`;
-// draws.textContent = `${drawedGames} Draws`;
 
 // Making the buttons interactive
 
