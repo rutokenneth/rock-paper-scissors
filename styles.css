@@ -36,6 +36,10 @@ button {
     height: 60px;
     width: 100px;
 }
+.score-container {
+  display: flex;
+  justify-content: center;
+}
 /* Styles for the buttons */
 /* Load custom font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
