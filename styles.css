@@ -57,7 +57,10 @@ footer {
     color: #fff;
     text-align: center;
     font-family: 'Roboto', arial;
-    height: 50px;
+    height: 25px;
+}
+footer > a{
+  background-color: inherit;
 }
 .score-container {
   display: flex;
