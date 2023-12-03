@@ -30,11 +30,15 @@ h1 {
 }
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     min-height: 40px;
     background-color: #e7c5c5;
     color: black;
+}
+.header > p {
+  background-color: inherit;
+  font-size: 2em;
 }
 .scores {
     gap: 20px;
@@ -53,7 +57,10 @@ footer {
     color: #fff;
     text-align: center;
     font-family: 'Roboto', arial;
-    height: 50px;
+    height: 25px;
+}
+footer > a{
+  background-color: inherit;
 }
 .score-container {
   display: flex;
@@ -67,7 +74,8 @@ button {
 
 .new-game {
   color: green;
-  font-weight: 500;
+  font-weight: bold;
+  cursor: pointer;
 }
 .score-container {
   display: flex;
